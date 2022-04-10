@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- 576px以上の画面幅のとき、メニューを表示する（それ未満なら折りたたむ）指定を追加 -->
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand navbar-light bg-light">
             <div class="container-fluid">
                 <!-- 画面左上に表示するサイト名のリンクとして適切な表示をするための指定を追加 -->
                 <a href="#" class="navbar-brand"> サンプル株式会社</a>
@@ -28,7 +28,7 @@
                         <li class="nav-item"><a href="#" class="nav-link">ニュース</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
                         <!-- お問い合わせページを表示していることをわかりやすくする設定を追加 -->
-                        <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>
+                        <li class="mb-1 nav-item"><a href="#" class="nav-link active">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,7 @@
             <!-- 576px以上の画面幅のとき、左側は3つ分のカラム幅で表示する指定を追加 -->
             <div class="col-sm-3">
                 <!-- 電話に関するBootstrap Iconsのアイコンを「お電話：」の左に追加 -->
-                <img class="" src="./icons/telephone-fill.svg" alt="電話のアイコン"> <strong>お電話：</strong>
+                <img class="mb-1" src="./icons/telephone-fill.svg" alt="電話のアイコン"> <strong>お電話：</strong>
             </div>
 
             <!-- 576px以上の画面幅のとき、右側は9つ分のカラム幅で表示する指定を追加 -->
@@ -82,11 +82,11 @@
                     <!-- カードのタイトル部分として設定 -->
                     <div class="card-header">
                         <!-- 営業時間の情報に関するBootstrap Iconsのアイコンを「営業時間」の左に追加 -->
-                        <img class="text-start" src="./icons/info-circle-fill.svg" alt="営業時間のアイコン"> 営業時間
+                        <img class="mb-1" src="./icons/info-circle-fill.svg" alt="営業時間のアイコン"> 営業時間
                     </div>
 
                     <!-- カードの本文部分として設定 -->
-                    <div class="text-start">
+                    <div class="card-body">
                         平日10時〜19時（土日・祝日は対応しておりません）
                     </div>
                 </div>
@@ -98,7 +98,7 @@
             <!-- 576px以上の画面幅のとき、左側は3つ分のカラム幅で表示する指定を追加 -->
             <div class="col-sm-3">
                 <!-- メールに関するBootstrap Iconsのアイコンを「メール：」の左に追加 -->
-                <img class="" src="./icons/envelope.svg" alt="メールのアイコン"> <strong>メール：</strong>
+                <img class="mb-1" src="./icons/envelope.svg" alt="メールのアイコン"> <strong>メール：</strong>
             </div>
 
             <!-- 576px以上の画面幅のとき、右側は9つ分のカラム幅で表示する指定を追加 -->
@@ -111,10 +111,10 @@
                     <!-- ラベルとフォーム部品を並べるためにグリッドを使う指定を追加 -->
                       <div class="mb-3 row">
                         <!-- 576px以上の画面幅のとき、ラベルは3つ分のカラム幅で表示する指定を追加 -->
-                        <label class="col-3 col-form-label">会社名：</label>
+                        <label class="col-sm-3 col-form-label">会社名：</label>
 
                         <!-- 576px以上の画面幅のとき、フォーム部品は9つ分のカラム幅で表示する指定を追加 -->
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="company">
                         </div>
                     </div>
@@ -122,10 +122,10 @@
                     <!-- ラベルとフォーム部品を並べるためにグリッドを使う指定を追加 -->
                     <div class="mb-3 row">
                         <!-- 576px以上の画面幅のとき、ラベルは3つ分のカラム幅で表示する指定を追加 -->
-                        <label class="col-3 col-form-label">氏名：</label>
+                        <label class="col-sm-3 col-form-label">氏名：</label>
 
                         <!-- 576px以上の画面幅のとき、フォーム部品は9つ分のカラム幅で表示する指定を追加 -->
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="name">
                         </div>
                     </div>
@@ -133,10 +133,10 @@
                     <!-- ラベルとフォーム部品を並べるためにグリッドを使う指定を追加 -->
                     <div class="mb-3 row">
                         <!-- 576px以上の画面幅のとき、ラベルは3つ分のカラム幅で表示する指定を追加 -->
-                        <label class="col-3 col-form-label">メール：</label>
+                        <label class="col-sm-3 col-form-label">メール：</label>
 
                         <!-- 576px以上の画面幅のとき、フォーム部品は9つ分のカラム幅で表示する指定を追加 -->
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="mail">
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                         <label class="col-3 col-form-label">電話番号：</label>
 
                         <!-- 576px以上の画面幅のとき、フォーム部品は9つ分のカラム幅で表示する指定を追加 -->
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="tel">
                         </div>
                     </div>
@@ -155,10 +155,10 @@
                     <!-- ラベルとフォーム部品を並べるためにグリッドを使う指定を追加 -->
                     <div class="mb-3 row">
                         <!-- 576px以上の画面幅のとき、ラベルは3つ分のカラム幅で表示する指定を追加 -->
-                        <label class="col-3 col-form-label">内容：</label>
+                        <label class="col-sm-3 col-form-label">内容：</label>
 
                         <!-- 576px以上の画面幅のとき、フォーム部品は9つ分のカラム幅で表示する指定を追加 -->
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <textarea class="form-control" name="content"></textarea>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         <!-- 576px以上の画面幅のとき、3つ分のカラム幅の隙間を表示する設定を追加 -->
                         <!-- さらに、576px以上の画面幅のとき、9つ分のカラム幅で送信ボタンの表示部分の設定を追加 -->
                         <label class="col-3 col-form-label"></label>
-                        <div class="col-9">
+                        <div class="col-sm-9">
 
                             <!-- 送信ボタンを緑色にする設定を追加 -->
                             <button type="submit" class="btn btn-success w-100">お問い合わせ内容を送信する</button>
